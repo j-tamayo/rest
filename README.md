@@ -2,6 +2,7 @@ rest
 ====
 
 Api Rest
+====
 
 GET	    /users.json	      List users
 GET	    /users/{id}.json	View user
