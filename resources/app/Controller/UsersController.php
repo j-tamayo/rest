@@ -43,7 +43,7 @@ class UsersController extends AppController {
     public function edit($id) {
         $this->User->id = $id;
         if ($this->User->save($this->request->data)) {
-            $message = 'Saved';
+            $message = 'User edited';
         } else {
             $message = 'Error';
         }
@@ -55,7 +55,7 @@ class UsersController extends AppController {
 
     public function delete($id) {
         if ($this->User->delete($id)) {
-            $message = 'Deleted';
+            $message = 'User deleted';
         } else {
             $message = 'Error';
         }
